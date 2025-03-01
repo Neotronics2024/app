@@ -1,0 +1,8 @@
+export const solutions = [
+    { id: 1, title: 'Network Security', description: 'Neotronics, with its extensive experienced consultants, can guide you with the right pace, methods and tools for securing your network'},
+    { id: 2, title: 'Digital Transformation', description: 'ThoughtsPro is one of the leading firms that support digital transformation for hundreds of clients. ThoughtsPro simplifies the entire complex process and improves the ROI of your company.'},
+    { id: 3, title: 'Identity & Access Management', description: 'Let us tackle your strong identity challenges!'},
+    { id: 4, title: 'Cyber Risk Assesment', description: 'Cyber risks include application downtime, damage to brand name, stolen data and even other adverse consequences. Cybersecurity solutions are technological tools and services that are designed to protect the organization against cyber attacks and threats.'},
+    { id: 5, title: 'Enterprise Networking', description: 'Enterprise network is utilized by medium size organizations to large-run organizations to connect to their people, devices and applications in data center and cloud infrastructure. The networking becomes more complex as the organization grows.'},
+    { id: 6, title: 'Datacenter', description: 'Our expert team provides a comprehensive range of security solutions for IT systems. They are completely tailored to your requirements and needs.'},
+];
