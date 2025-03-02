@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build && next export",
     "start": "next start",
+    "build": "next build",
     "export": "next export",
-    "postbuild": "next-sitemap",
-    "deploy": "gh-pages -d out"
+    "deploy": "next build && next export && gh-pages -d out",
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

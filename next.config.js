@@ -1,15 +1,15 @@
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfiguration = {
   future: {
     webpack5: true
   },
   output: "export",  // <=== enables static exports
-  basePath: "/app",
-  assetPrefix: "/app/",
+  basePath: isProd ? "/app" : "",
+  assetPrefix: isProd ? "/app/" : "",  
   images: {
-    unoptimized: true, // Disables Next.js image optimization (GitHub Pages doesn't support it)
+    unoptimized: true, // Required for GitHub Pages
   },
   reactStrictMode: true,
 };
