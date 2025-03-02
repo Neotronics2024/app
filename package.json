@@ -7,7 +7,7 @@
     "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "export": "NODE_OPTIONS=--openssl-legacy-provider next export",
-    "deploy": "next build && next export && gh-pages -d out"
+    "deploy": "NODE_OPTIONS=--openssl-legacy-provider next build && NODE_OPTIONS=--openssl-legacy-provider next export && gh-pages -d out"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
